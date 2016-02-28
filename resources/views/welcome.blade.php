@@ -4,7 +4,7 @@
         <title>Laravel</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <style>
             html, body {
                 height: 100%;
@@ -38,7 +38,18 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">Laravel 5 Multitenant Todo Application</div>
+                <div>
+                    <a href="{{ route('session.register') }}" class="btn btn-primary"><strong>Register Here</strong></a>
+                    <a href="{{ route('session.signin') }}" class="btn btn-primary"><strong>Sign In</strong></a>
+                </div>
+                <div class="row">
+                    @if(Session::has('message'))
+                        <div class="alert alert-{!! Session::get('message_type') !!}">
+                            {!! Session::get('message') !!}
+                        </div>
+                    @endif
+                </div>
             </div>
         </div>
     </body>

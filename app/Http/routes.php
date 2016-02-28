@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    dd(app());
-});
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,5 +25,79 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    Route::get('/', function () {
+        return view('welcome');
+    });
+
+    Route::get('/',
+    [
+        'as' => 'home',
+        'uses' => 'HomeController@home'
+    ]);
+
+    Route::get('session/register',
+    [
+        'as' => 'session.register',
+        'uses' => 'SessionsController@register'
+    ]);
+
+    Route::post('session/register',
+    [
+        'as' => 'session.register',
+        'uses' => 'SessionsController@postRegister'
+    ]);
+
+    Route::get('session/signin',
+    [
+        'as' => 'session.signin',
+        'uses' => 'SessionsController@signIn'
+    ]);
+
+    Route::get('login',
+    [
+        'as' => 'login',
+        'uses' => 'SessionsController@signIn'
+    ]);
+
+    Route::post('session/signin',
+    [
+        'as' => 'session.signin',
+        'uses' => 'SessionsController@postSignIn'
+    ]);
+
+    Route::get('session/signout',
+    [
+        'as' => 'tenant.signout',
+        'uses' => 'SessionsController@signOut'
+    ]);
+
+    Route::get('dashboard',
+    [
+        'as' => 'dashboard',
+        'uses' => 'DashboardController@index'
+    ]);
+
+    Route::get('todos',
+    [
+        'as' => 'todos',
+        'uses' => 'TodosController@index'
+    ]);
+
+    Route::get('todo/create',
+    [
+        'as' => 'todo.create',
+        'uses' => 'TodosController@create'
+    ]);
+
+    Route::post('todo/create',
+    [
+        'as' => 'todo.create',
+        'uses' => 'TodosController@postCreate'
+    ]);
+
+    Route::get('todo/toggle/{body}',
+    [
+        'as' => 'todo.toggle',
+        'uses' => 'TodosController@toggle'
+    ]);
 });
