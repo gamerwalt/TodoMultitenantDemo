@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "93cf10aadf08925de8e38886d5113fba",
-    "content-hash": "18e236c7ddd43c7c77dc9b9fefbdde1a",
+    "hash": "6d5f831c916252076952c4d2cc8d0c2e",
+    "content-hash": "7843cd00128205cd62a41763e50aeb77",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -167,12 +167,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gamerwalt/laramultidbtenant.git",
-                "reference": "17f310085acd95212eddb0de0bcabde9f7db2e05"
+                "reference": "a1dedeeacb303195413b76aadf823781100edeba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gamerwalt/laramultidbtenant/zipball/17f310085acd95212eddb0de0bcabde9f7db2e05",
-                "reference": "17f310085acd95212eddb0de0bcabde9f7db2e05",
+                "url": "https://api.github.com/repos/gamerwalt/laramultidbtenant/zipball/a1dedeeacb303195413b76aadf823781100edeba",
+                "reference": "a1dedeeacb303195413b76aadf823781100edeba",
                 "shasum": ""
             },
             "require": {
@@ -194,6 +194,7 @@
                     "gamerwalt\\LaraMultiDbTenant\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -204,11 +205,7 @@
                 }
             ],
             "description": "This package is used to create and manage laravel multitenant applications",
-            "support": {
-                "source": "https://github.com/gamerwalt/laramultidbtenant/tree/master",
-                "issues": "https://github.com/gamerwalt/laramultidbtenant/issues"
-            },
-            "time": "2016-02-28 18:12:32"
+            "time": "2016-02-28 18:31:07"
         },
         {
             "name": "jakub-onderka/php-console-color",
