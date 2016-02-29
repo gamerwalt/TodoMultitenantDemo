@@ -2,7 +2,7 @@
 
 namespace App;
 
-use gamerwalt\LaraMultiDbTenant\Contracts\Illuminate;
+
 use gamerwalt\LaraMultiDbTenant\Contracts\ITenantDatabase;
 use Illuminate\Database\Eloquent\Model;
 
