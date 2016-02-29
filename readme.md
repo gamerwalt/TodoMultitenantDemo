@@ -1,7 +1,9 @@
 # Todo Multi Tenant
 
 This little laravel web application was used to demo the package gamerwalt/laramultidbtenant
- 
+
+**See .env.example for database to create**
+
 The package itself can be found on [github](https://github.com/gamerwalt/laramultidbtenant)
 
 ## License
