@@ -130,7 +130,7 @@ class SessionsController extends Controller
         $tenantDatabase->tenant_id = $tenant->tenant_id;
         $tenantDatabase->driver = 'mysql';
         $tenantDatabase->port = 3306;
-        $tenantDatabase->hostname = 'bentadb';
+        $tenantDatabase->hostname = 'localhost';
         $tenantDatabase->database_name = $tenant->database_prefix . '_' . substr($tenant->company_name, 0, 5);
         $tenantDatabase->user_name = $tenant->database_prefix . '_' . substr($tenant->company_name, 0, 5) . '_user';
         $tenantDatabase->password = $this->genRandomPassword();
